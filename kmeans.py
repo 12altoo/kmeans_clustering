@@ -72,7 +72,7 @@ def main():
 
 	color=['r','g']
 
-	for index in range(dataset.shape[0]):											#plotting th egivin data
+	for index in range(dataset.shape[0]):									#plotting the givin data
 		close_x = [i for i in range(len(belongs_to)) if belongs_to[i] == index]
 		for index_d in close_x:
 			plt.scatter(dataset[index_d][0],dataset[index_d][1],color=color[index])        
